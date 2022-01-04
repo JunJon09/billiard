@@ -1,4 +1,5 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, request
+import requests
 app = Flask(__name__)
 app.config["JSON_AS_ASCII"] = False  # 日本語などのASCII以外の文字列を返したい場合は、こちらを設定しておく
 
@@ -7,9 +8,18 @@ app.config["JSON_AS_ASCII"] = False  # 日本語などのASCII以外の文字列
 def index():
     return render_template("index.html")
 
-@app.route('/jpa')
+@app.route('/jpa-form')
+def jpaForm():
+    return render_template("jpa-form.html")
+
+@app.route('/jpa', methods=['GET', 'POST'])
 def jpa():
-    return render_template("jpa.html")
+    
+    #GETで来た場合
+    if request.method == 'GET':
+        # トップページにリダイレクト
+         return render_template("jpa-form.html")
+    
 
 @app.route('/japan9')
 def japan9():
