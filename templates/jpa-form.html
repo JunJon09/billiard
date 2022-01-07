@@ -8,6 +8,37 @@
 </head>
 <body>
   <h1>JPA</h1>
+  <form action="/jpa" method="POST" enctype="multipart/form-data">
+    自分の名前: <input type="text" name="myName" required><br>
+    自分のスキルレベル: 
+    <select name="mySkillLevel" id="mySkill">
+      <option value="skill-1">スキルレベル1(14)</option>
+      <option value="skill-2">スキルレベル2(19)</option>
+      <option value="skill-3">スキルレベル3(25)</option>
+      <option value="skill-4">スキルレベル4(31)</option>
+      <option value="skill-5">スキルレベル5(38)</option>
+      <option value="skill-6">スキルレベル6(46)</option>
+      <option value="skill-7">スキルレベル7(55)</option>
+      <option value="skill-8">スキルレベル8(65)</option>
+      <option value="skill-9">スキルレベル9(75)</option>
+    </select>
+    <br>
 
+    相手の名前: <input type="text" name="yourName" required><br>
+    相手のスキルレベル: 
+    <select name="yourSkillLevel" id="mySkill" required>
+      <option value="skill-1">スキルレベル1(14)</option>
+      <option value="skill-2">スキルレベル2(19)</option>
+      <option value="skill-3">スキルレベル3(25)</option>
+      <option value="skill-4">スキルレベル4(31)</option>
+      <option value="skill-5">スキルレベル5(38)</option>
+      <option value="skill-6">スキルレベル6(46)</option>
+      <option value="skill-7">スキルレベル7(55)</option>
+      <option value="skill-8">スキルレベル8(65)</option>
+      <option value="skill-9">スキルレベル9(75)</option>
+    </select>
+    <br>
+    <input type="submit" value="送信する">
+  </form>
 </body>
 </html>
