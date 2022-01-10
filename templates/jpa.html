@@ -35,7 +35,7 @@
         </tr>
         <tr>
           <td>
-            <p>カウントを表示させる</p>
+            <div id="mycount"><p>0</p></div>
           </td>
           <td>
             <p>カウントを表示させる</p>
@@ -47,31 +47,31 @@
         <tr>
           <td>
             <div class="bill-ball">
-              <input type="button" value="1">
+              <input type="button" value="1" id="mybtn1">
             </div>
             <div class="bill-ball">
-              <input type="button" value="2">
+              <input type="button" value="2" id="mybtn2">
             </div>
             <div class="bill-ball">
-              <input type="button" value="3">
+              <input type="button" value="3" id="mybtn3">
             </div>
             <div class="bill-ball">
-              <input type="button" value="4">
+              <input type="button" value="4" id="mybtn4"> 
             </div>
             <div class="bill-ball">
-              <input type="button" value="5">
+              <input type="button" value="5" id="mybtn5">
             </div>
             <div class="bill-ball">
-              <input type="button" value="6">
+              <input type="button" value="6" id="mybtn6">
             </div>
             <div class="bill-ball">
-              <input type="button" value="7">
+              <input type="button" value="7" id="mybtn7">
             </div>
             <div class="bill-ball">
-              <input type="button" value="8">
+              <input type="button" value="8" id="mybtn8">
             </div>
             <div class="bill-ball">
-              <input type="button" value="9">
+              <input type="button" value="9" id="mybtn9">
             </div>
           </td>
           <td>
@@ -135,7 +135,7 @@
         </tr>
         <tr>
           <td>
-            <p>後何個かを表示させる</p>
+            <p>{{myMore}}</p>
           </td>
           <td>
             <p>後何個かを表示させる</p>           
@@ -148,5 +148,7 @@
 
     </table>
   </main>
+  <!-- javascriptの読み込みを -->
+  <script type="text/javascript" src="../static/index.js"></script>
 </body>
 </html>

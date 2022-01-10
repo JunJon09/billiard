@@ -23,9 +23,10 @@ def jpa():
         myLevel = request.form['mySkillLevel']
         yourName = request.form['yourName']
         yourLevel = request.form['yourSkillLevel']
-        print(myLevel)
-        print(myName)
-        return render_template("jpa.html", myName=myName, myLevel=myLevel, yourLevel=yourLevel, yourName=yourName)
+        myMore = myLevel[2:-1]
+        yourMore = yourLevel[2:-1]
+        print(myMore)
+        return render_template("jpa.html", myName=myName, myLevel=myLevel, yourLevel=yourLevel, yourName=yourName, myMore=myMore, yourMore=yourMore)
     else:
         return abort(400)
 
