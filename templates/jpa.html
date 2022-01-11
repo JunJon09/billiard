@@ -19,7 +19,7 @@
             <p>{{yourName}}</p>
           </td>
           <td>
-            <p>無効球</p>
+            <p>イニング数</p>
           </td>
         </tr>
         <tr>
@@ -30,7 +30,9 @@
             <p>スキルレベル:{{yourLevel}}</p>
           </td>
           <td>
-            <p>イニング数を数える</p>
+            <input type="button" value="+" id="pulus-inning">
+            <input type="button" value="-" id="minus-inning">
+            <p id="count">0</p>
           </td>
         </tr>
         <tr>
@@ -38,10 +40,10 @@
             <div id="mycount"><p>0</p></div>
           </td>
           <td>
-            <p>カウントを表示させる</p>
+            <div id="yourcount"><p>0</p></div>
           </td>
           <td>
-            <p>カウントを表示させる</p>
+            <div>無効球<p id="disball">0</p></div>
           </td>
         </tr>
         <tr>
@@ -76,69 +78,66 @@
           </td>
           <td>
             <div class="bill-ball">
-              <input type="button" value="1">
+              <input type="button" value="1" id="yourbtn1">
             </div>
             <div class="bill-ball">
-              <input type="button" value="2">
+              <input type="button" value="2" id="yourbtn2">
             </div>
             <div class="bill-ball">
-              <input type="button" value="3">
+              <input type="button" value="3" id="yourbtn3">
             </div>
             <div class="bill-ball">
-              <input type="button" value="4">
+              <input type="button" value="4" id="yourbtn4">
             </div>
             <div class="bill-ball">
-              <input type="button" value="5">
+              <input type="button" value="5" id="yourbtn5">
             </div>
             <div class="bill-ball">
-              <input type="button" value="6">
+              <input type="button" value="6" id="yourbtn6">
             </div>
             <div class="bill-ball">
-              <input type="button" value="7">
+              <input type="button" value="7" id="yourbtn7">
             </div>
             <div class="bill-ball">
-              <input type="button" value="8">
+              <input type="button" value="8" id="yourbtn8">
             </div>
             <div class="bill-ball">
-              <input type="button" value="9">
+              <input type="button" value="9" id="yourbtn9">
             </div>
           </td>
           <td>
             <div class="bill-ball">
-              <input type="button" value="1">
+              <input type="button" value="1" id="disbtn1">
             </div>
             <div class="bill-ball">
-              <input type="button" value="2">
+              <input type="button" value="2" id="disbtn2">
             </div>
             <div class="bill-ball">
-              <input type="button" value="3">
+              <input type="button" value="3" id="disbtn3">
             </div>
             <div class="bill-ball">
-              <input type="button" value="4">
+              <input type="button" value="4" id="disbtn4">
             </div>
             <div class="bill-ball">
-              <input type="button" value="5">
+              <input type="button" value="5" id="disbtn5">
             </div>
             <div class="bill-ball">
-              <input type="button" value="6">
+              <input type="button" value="6" id="disbtn6">
             </div>
             <div class="bill-ball">
-              <input type="button" value="7">
+              <input type="button" value="7" id="disbtn7">
             </div>
             <div class="bill-ball">
-              <input type="button" value="8">
-            </div>
-            <div class="bill-ball">
-              <input type="button" value="9">
+              <input type="button" value="8" id="disbtn8">
             </div>
           </td>
         </tr>
         <tr>
           <td>
-            <p>{{myMore}}</p>
+            <div id="myMore"><p>{{myMore}}</p></div>
           </td>
           <td>
-            <p>後何個かを表示させる</p>           
+            <div id="yourMore"><p>{{yourMore}}</p></div>           
           </td>
           <td>
             <p>←MoreBall</p>
