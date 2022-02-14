@@ -34,3 +34,24 @@ form input[type='submit']:hover {
   color         : #ffff1a;     /* 背景色     */
   background    : #000000;     /* 文字色     */
 }
+
+@media screen and (min-width: 960px) {
+	/* 960px以上に適用されるCSS（PC用） */
+  body{
+    font-size: 2rem; 
+  }
+  /* formの適応 */
+  form{
+    margin-top: 50px;
+    line-height: normal;
+  }
+  form input[type='text']{
+    height: 2rem;
+    font-size: 2rem;
+  }
+  form .skil{
+    height: 2rem;
+    font-size: 1rem;
+  }
+  
+}
