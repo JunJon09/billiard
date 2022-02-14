@@ -4,29 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>ログインフォーム</title>
+  <link rel="stylesheet" href="../static/style_jpa_form.css">
 </head>
 <body>
   <h1>JPA</h1>
   <form action="/jpa" method="POST" enctype="multipart/form-data">
     自分の名前: <input type="text" name="myName" required><br>
-    自分のスキルレベル: 
-    <select name="mySkillLevel" id="mySkill">
-      <option value="1(14)">スキルレベル1(14)</option>
-      <option value="2(19)">スキルレベル2(19)</option>
-      <option value="3(25)">スキルレベル3(25)</option>
-      <option value="4(31)">スキルレベル4(31)</option>
-      <option value="5(38)">スキルレベル5(38)</option>
-      <option value="6(46)">スキルレベル6(46)</option>
-      <option value="7(55)">スキルレベル7(55)</option>
-      <option value="8(65)">スキルレベル8(65)</option>
-      <option value="9(75)">スキルレベル9(75)</option>
-    </select>
-    <br>
-
     相手の名前: <input type="text" name="yourName" required><br>
-    相手のスキルレベル: 
-    <select name="yourSkillLevel" id="mySkill" required>
+    自分のスキルレベル: 
+    <select name="mySkillLevel" id="mySkill" class="skil">
       <option value="1(14)">スキルレベル1(14)</option>
       <option value="2(19)">スキルレベル2(19)</option>
       <option value="3(25)">スキルレベル3(25)</option>
@@ -38,7 +25,20 @@
       <option value="9(75)">スキルレベル9(75)</option>
     </select>
     <br>
-    <input type="submit" value="送信する">
+    相手のスキルレベル: 
+    <select name="yourSkillLevel" id="mySkill" class="skil">
+      <option value="1(14)">スキルレベル1(14)</option>
+      <option value="2(19)">スキルレベル2(19)</option>
+      <option value="3(25)">スキルレベル3(25)</option>
+      <option value="4(31)">スキルレベル4(31)</option>
+      <option value="5(38)">スキルレベル5(38)</option>
+      <option value="6(46)">スキルレベル6(46)</option>
+      <option value="7(55)">スキルレベル7(55)</option>
+      <option value="8(65)">スキルレベル8(65)</option>
+      <option value="9(75)">スキルレベル9(75)</option>
+    </select>
+    <br>
+    <input type="submit" value="開始する">
   </form>
 </body>
 </html>

@@ -1,0 +1,36 @@
+/* jpaのログインフォームのCSS全てに適応させてる */
+body{ 
+  text-align: center;
+  font-size: 5vw; /* ５vwはその画面のサイズ５%ってこと*/
+}
+/* formの適応 */
+form{
+  margin-top: 50px;
+  line-height: 10vw;
+}
+form input[type='text']{
+  height: 5vw;
+}
+form .skil{
+  height: 5vw;
+}
+form input[type='submit']{
+  margin-top:80px;
+  display       : inline-block;
+  border-radius : 50%;          /* 角丸       */
+  font-size     : 21pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 48px 7px;   /* 余白       */
+  background    : #ffff1a;     /* 背景色     */
+  color         : #000000;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 9px 9px 12px #666666;  /* 影の設定 */
+  border        : 2px solid #ffff1a;    /* 枠の指定 */
+}
+form input[type='submit']:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #ffff1a;     /* 背景色     */
+  background    : #000000;     /* 文字色     */
+}
