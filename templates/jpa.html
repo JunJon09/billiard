@@ -1,11 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JPA</title>
-  <link rel="stylesheet" href="../static/style.css">
+  <link rel="stylesheet" href="../static/style_jpa.css">
+  <script type="text/javascript">
+    var windowSize = window.innerWidth;
+    if(windowSize<=481){
+      window.onorientationchange = function () {
+        switch ( window.orientation ) {
+         case 0:
+          break;
+         case 90:
+          alert('画面を縦にしてくださいね');
+          break;
+         case -90:
+          alert('画面を縦にしてくださいね');
+          break;
+        }
+      }
+    }else{
+      window.onorientationchange = function () {
+        switch ( window.orientation ) {
+         case 0:
+          alert('画面を横にしてくださいね');
+          break;
+        }
+      }
+    }
+    </script>
 </head>
 <body>
   <!-- ジンジャで表示している。 -->
@@ -44,92 +69,98 @@
             <div id="yourcount"><p>0</p></div>
           </td>
           <td>
-            <div>無効球<p id="disball">0</p></div>
+            <div class="dis">無効球<p id="disball">0</p></div>
           </td>
         </tr>
         <tr>
-          <td>
-            <div class="bill-ball">
-              <input type="button" value="1" id="mybtn1">
-            </div>
-            <div class="bill-ball">
-              <input type="button" value="2" id="mybtn2">
-            </div>
-            <div class="bill-ball">
-              <input type="button" value="3" id="mybtn3">
-            </div>
-            <div class="bill-ball">
-              <input type="button" value="4" id="mybtn4"> 
-            </div>
-            <div class="bill-ball">
-              <input type="button" value="5" id="mybtn5">
-            </div>
-            <div class="bill-ball">
-              <input type="button" value="6" id="mybtn6">
-            </div>
-            <div class="bill-ball">
-              <input type="button" value="7" id="mybtn7">
-            </div>
-            <div class="bill-ball">
-              <input type="button" value="8" id="mybtn8">
-            </div>
-            <div class="bill-ball">
-              <input type="button" value="9" id="mybtn9">
-            </div>
-          </td>
-          <td>
-            <div class="bill-ball">
-              <input type="button" value="1" id="yourbtn1">
-            </div>
-            <div class="bill-ball">
-              <input type="button" value="2" id="yourbtn2">
-            </div>
-            <div class="bill-ball">
-              <input type="button" value="3" id="yourbtn3">
-            </div>
-            <div class="bill-ball">
-              <input type="button" value="4" id="yourbtn4">
-            </div>
-            <div class="bill-ball">
-              <input type="button" value="5" id="yourbtn5">
-            </div>
-            <div class="bill-ball">
-              <input type="button" value="6" id="yourbtn6">
-            </div>
-            <div class="bill-ball">
-              <input type="button" value="7" id="yourbtn7">
-            </div>
-            <div class="bill-ball">
-              <input type="button" value="8" id="yourbtn8">
-            </div>
-            <div class="bill-ball">
-              <input type="button" value="9" id="yourbtn9">
+          <td class="ball-frame">
+            <div class="ball">
+              <div class="bill-ball1">
+                <input type="button" value="1" id="mybtn1">
+              </div>
+              <div class="bill-ball2">
+                <input type="button" value="2" id="mybtn2">
+              </div>
+              <div class="bill-ball3">
+                <input type="button" value="3" id="mybtn3">
+              </div>
+              <div class="bill-ball4">
+                <input type="button" value="4" id="mybtn4"> 
+              </div>
+              <div class="bill-ball5">
+                <input type="button" value="5" id="mybtn5">
+              </div>
+              <div class="bill-ball6">
+                <input type="button" value="6" id="mybtn6">
+              </div>
+              <div class="bill-ball7">
+                <input type="button" value="7" id="mybtn7">
+              </div>
+              <div class="bill-ball8">
+                <input type="button" value="8" id="mybtn8">
+              </div>
+              <div class="bill-ball9">
+                <input type="button" value="9" id="mybtn9">
+              </div>
             </div>
           </td>
-          <td>
-            <div class="bill-ball">
-              <input type="button" value="1" id="disbtn1">
+          <td class="ball-frame">
+            <div class="ball">
+              <div class="bill-ball1">
+                <input type="button" value="1" id="yourbtn1">
+              </div>
+              <div class="bill-ball2">
+                <input type="button" value="2" id="yourbtn2">
+              </div>
+              <div class="bill-ball3">
+                <input type="button" value="3" id="yourbtn3">
+              </div>
+              <div class="bill-ball4">
+                <input type="button" value="4" id="yourbtn4">
+              </div>
+              <div class="bill-ball5">
+                <input type="button" value="5" id="yourbtn5">
+              </div>
+              <div class="bill-ball6">
+                <input type="button" value="6" id="yourbtn6">
+              </div>
+              <div class="bill-ball7">
+                <input type="button" value="7" id="yourbtn7">
+              </div>
+              <div class="bill-ball8">
+                <input type="button" value="8" id="yourbtn8">
+              </div>
+              <div class="bill-ball9">
+                <input type="button" value="9" id="yourbtn9">
+              </div>
             </div>
-            <div class="bill-ball">
-              <input type="button" value="2" id="disbtn2">
-            </div>
-            <div class="bill-ball">
-              <input type="button" value="3" id="disbtn3">
-            </div>
-            <div class="bill-ball">
-              <input type="button" value="4" id="disbtn4">
-            </div>
-            <div class="bill-ball">
-              <input type="button" value="5" id="disbtn5">
-            </div>
-            <div class="bill-ball">
-              <input type="button" value="6" id="disbtn6">
-            </div>
-            <div class="bill-ball">
-              <input type="button" value="7" id="disbtn7">
-            </div>
-            <div class="bill-ball">
-              <input type="button" value="8" id="disbtn8">
+          </td>
+          <td class="ball-frame">
+            <div class="ball">
+              <div class="bill-ball1">
+                <input type="button" value="1" id="disbtn1">
+              </div>
+              <div class="bill-ball2">
+                <input type="button" value="2" id="disbtn2">
+              </div>
+              <div class="bill-ball3">
+                <input type="button" value="3" id="disbtn3">
+              </div>
+              <div class="bill-ball4">
+                <input type="button" value="4" id="disbtn4">
+              </div>
+              <div class="bill-ball5">
+                <input type="button" value="5" id="disbtn5">
+              </div>
+              <div class="bill-ball6">
+                <input type="button" value="6" id="disbtn6">
+              </div>
+              <div class="bill-ball7">
+                <input type="button" value="7" id="disbtn7">
+              </div>
+              <div class="bill-ball8">
+                <input type="button" value="8" id="disbtn8">
+              </div>
             </div>
           </td>
         </tr>
