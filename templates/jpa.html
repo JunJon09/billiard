@@ -21,19 +21,14 @@
           break;
         }
       }
-    }else{
-      window.onorientationchange = function () {
-        switch ( window.orientation ) {
-         case 0:
-          alert('画面を横にしてくださいね');
-          break;
-        }
-      }
     }
     </script>
 </head>
 <body>
   <!-- ジンジャで表示している。 -->
+  <div class="side">
+
+  </div>
   <main>
     <table border="5">
       <tbody>
@@ -183,6 +178,7 @@
     <div id="score">
     </div>
   </main>
+  <div class="side"></div>
   <!-- javascriptの読み込みを -->
   <script type="text/javascript" src="../static/index.js"></script>
 </body>
