@@ -2,8 +2,10 @@
 main{
   box-sizing: border-box;
   margin: 0 auto;
+  text-align: center;
 }
 table{
+  margin: 0 auto;
   text-align: center;
   height: 10vh;
 }
@@ -17,7 +19,6 @@ td{
 }
 .ball-frame{
   height: 300px;
-  
 }
 .ball{
   display: grid;
@@ -27,6 +28,7 @@ td{
 }
 input[type='button']{
   border-radius:100%;
+  -webkit-appearance: none;
 }
 .ball-frame input[type='button']{
   padding: 20% 30%;
@@ -81,7 +83,7 @@ input[type='button']{
 /* タブレット用 */
 @media screen and (min-width: 481px){
   body{
-    color: blue;
+
   }
 }
 
@@ -90,5 +92,8 @@ input[type='button']{
 @media screen and (min-width: 960px) {
   body{
     color: red;
+  }
+  .ball-frame{
+    height: 250px;
   }
 }
