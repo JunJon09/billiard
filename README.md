@@ -5,6 +5,9 @@ JPAとジャパンのカウントするもの。
 
 言語は、pythonを主に使い、flaskで行う。
 
+最初の動きはLottieを使った
+使った動画→https://lottiefiles.com/26174-solids
+
 herokuの参照
 git add app.py requirements.txt Procfile
 https://deepblue-ts.co.jp/git/git-push-error/
