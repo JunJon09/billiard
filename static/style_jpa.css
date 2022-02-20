@@ -25,6 +25,58 @@ td{
   grid-template-rows: 1fr 1fr 1fr;
   row-gap: 50px;
 }
+input[type='button']{
+  border-radius:100%;
+}
+.ball-frame input[type='button']{
+  padding: 20% 30%;
+}
+.ball1{
+  background    : yellow;     /* 背景色     */
+}
+.ball2{
+  background    : blue;     /* 背景色     */
+  color: white;
+}
+.ball3{
+  background    : red;     /* 背景色     */
+  color: white;
+}
+.ball4{
+  background    : pink;     /* 背景色     */
+  color: white;
+}
+.ball5{
+  background    : orange;     /* 背景色     */
+  color: white;
+}
+.ball6{
+  background    : green;     /* 背景色     */
+  color: white;
+}
+.ball7{
+  background    : brown;     /* 背景色     */
+  color: white;
+}
+.ball8{
+  background    : black;     /* 背景色     */
+  color: white;
+}
+.ball9{
+  background    : yellow;     /* 背景色     */
+
+}
+#back-button{
+  margin-top: 10px;
+}
+#back-button input[type='button']{
+  padding       : 15px 10px;   /* 余白       */
+}
+#score{
+  font-size: 1.5em;
+}
+
+
 
 /* タブレット用 */
 @media screen and (min-width: 481px){
